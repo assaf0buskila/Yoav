@@ -1,0 +1,23 @@
+{
+  "headers": [
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.well-known/apple-app-site-association",
+      "dest": "/.well-known/apple-app-site-association"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "https://your-base44-app-url.com/$1"
+    }
+  ]
+}
